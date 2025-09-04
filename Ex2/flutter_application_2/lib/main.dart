@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "ListViewDemo",
+      title: "Product Catalog",
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Custom List View',
+            'Product List View',
             style: TextStyle(letterSpacing: 5),
           ),
         ),
@@ -23,20 +23,34 @@ class MyApp extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           children: const [
             MyListItem(
-              fruitname: "Apple",
-              price: 180,
-              image: 'assets/images/apple.jpg',
+              fruitname: "Samsung Galaxy S25 Ultra",
+              price: 107500,
+              image: 'assets/images/SAM.jpeg',
             ),
             MyListItem(
-              fruitname: "Banana",
-              price: 60,
-              image: 'assets/images/banana.jpg',
+              fruitname: "Xiaomi Redmi 15",
+              price: 14999,
+              image: 'assets/images/Redmi.jpeg',
             ),
             MyListItem(
-              fruitname: "Orange",
-              price: 120,
-              image: 'assets/images/orange.jpg',
+              fruitname: "iPhone 16 Pro Max",
+              price: 130900,
+              image: 'assets/images/iphone.jpeg'
             ),
+            MyListItem(
+              fruitname: "vivo X200 FE",
+              price: 54999,
+              image: 'assets/images/vivo.jpeg',
+            ),
+            MyListItem(
+              fruitname: "OnePlus Nord CE 5 5G",
+              price: 24998,
+              image: 'assets/images/oneplus.jpeg',
+            ),
+            MyListItem(
+              fruitname: "Nothing Phone (3a) Pro ",
+              price: 28067,
+              image: 'assets/images/Nothing.jpeg',)
           ],
         ),
       ),
